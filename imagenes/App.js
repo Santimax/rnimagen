@@ -1,15 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import './app.css';
+import Card from './Card';
+import React from 'react';
+import central from './imgs/central_perk_logo.jpeg';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      
+      <img className='image' src={central}/>
+      <Text style={styles.container}>
+        <h3>Try some of our most popular flavors!</h3>
+        <div>
+          <Card/>
+        </div>
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
 }
-//https://github.com/dantolin45/Imagenes-RN-Expo
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -18,3 +29,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
