@@ -8,3 +8,7 @@ h3{
     width: 100%;
     text-align: center;
 }
+div{
+    justify-self: center;
+    width: 50vw;
+}
